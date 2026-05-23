@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mauve / dusty-rose color combo inspired by provided image */
+:root {
+  --mauve-100: #f7e9ea;
+  --mauve-200: #e8cfd1;
+  --mauve-500: #b98a92;
+  --mauve-700: #7c5057;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #FAC790;
+  color: #000000;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(6px);
+}
+.accent-mauve {
+  color: var(--mauve-100);
+}
+.btn-mauve {
+  background: linear-gradient(90deg, var(--mauve-500), var(--mauve-700));
+  color: white;
+}
